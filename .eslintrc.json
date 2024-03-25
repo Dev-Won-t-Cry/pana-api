@@ -1,0 +1,5 @@
+{
+  "extends": [
+	"@lzbguts/eslint-config/node"
+  ]
+}
