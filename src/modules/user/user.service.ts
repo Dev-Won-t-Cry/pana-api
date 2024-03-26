@@ -38,7 +38,7 @@ class UserService {
 
 	async findByToken(token: string): Promise<User | null> {
 		const user = await prismaClient.user.findUnique({
-			where: { password_reset_token: token },
+			where: { passwordResetToken: token },
 		})
 
 		return user
